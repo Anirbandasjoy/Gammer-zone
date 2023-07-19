@@ -436,7 +436,7 @@ nav ul li i.black {
   }
   .bannerContainer {
     flex-direction: column-reverse;
-    margin-top: 17rem;
+    margin-top: 10rem;
     width: 100%;
   }
   .bannerButton {
@@ -571,5 +571,45 @@ nav ul li i.black {
   }
   .gammerText {
     text-align: center;
+  }
+  .videos {
+    flex-wrap: wrap;
+  }
+  .careers {
+    flex-wrap: wrap;
+  }
+  .careersTitleText {
+    margin-left: 0;
+    text-align: center;
+  }
+  .testomonialContainer .fristImages,
+  .footerText ul.socialMenu,
+  .footerText ul.FooterNav {
+    grid-template-columns: auto auto auto;
+  }
+  .footerText ul.AnotherNav {
+    grid-template-columns: auto auto;
+    text-align: left;
+  }
+  .imageFlex {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    color: #0b0223;
+    border: 1px solid white;
+    padding: 0.2rem 1rem;
+  }
+  .imageFlex img {
+    width: 35px;
+  }
+  .imageFlex span {
+    font-size: 0.5rem;
+  }
+  .navItems nav ul li {
+    padding: 0;
+  }
+  .socialBtn {
+    padding: 0 0.5rem;
   }
 }
