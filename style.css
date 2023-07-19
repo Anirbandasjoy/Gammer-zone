@@ -403,6 +403,7 @@ nav ul li i.black {
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
+  gap: 1rem;
 }
 .DesToptestomonialContainer .SecondImages {
   display: flex;
