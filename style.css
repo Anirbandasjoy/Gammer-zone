@@ -173,6 +173,9 @@ nav ul li i.black {
 .gammerImage img {
   width: 600px;
 }
+.gam {
+  margin-top: 1rem;
+}
 /* videos style */
 .videosContainer {
   margin-top: 4.5rem;
@@ -186,6 +189,7 @@ nav ul li i.black {
 
 .videosTitleText h1 {
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .videosTitleText h1 span {
@@ -229,7 +233,7 @@ nav ul li i.black {
 .video .icon {
   text-align: center;
 }
-/* Add styles for the overlay */
+
 .video .overlay {
   position: absolute;
   top: 0;
@@ -241,8 +245,8 @@ nav ul li i.black {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0; /* Initially hidden */
-  visibility: hidden; /* Initially hidden */
+  opacity: 0;
+  visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
@@ -397,6 +401,7 @@ nav ul li i.black {
   border-radius: 50px;
   cursor: pointer;
   transition: 0.4s;
+  color: rgb(238, 129, 129);
 }
 .DesToptestomonialContainer .FristImages {
   display: flex;
@@ -428,7 +433,10 @@ nav ul li i.black {
   font-size: 1.3rem;
 }
 .footerTitle h1 span {
-  color: #c285a5;
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .footerText ul.FooterNav {
   display: grid;
@@ -633,6 +641,18 @@ nav ul li i.black {
 /* medum device  */
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
+  .headerContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .headerLogo {
+    margin-bottom: 1rem;
+  }
+  nav ul li.socialBtn {
+    align-items: center;
+    background-color: white;
+    gap: 1rem;
+  }
   .bannerContainer {
     margin-top: 4rem;
     align-items: normal;
