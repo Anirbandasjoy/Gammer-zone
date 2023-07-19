@@ -69,7 +69,9 @@ nav ul li i.black {
 }
 .bannerText {
   background-image: url("./images/Group\ 14.png");
-  padding: 3rem;
+  background-position: center;
+  background-size: contain;
+  padding: 10%;
   border-radius: 0.6rem;
 }
 .bannerText h2 {
