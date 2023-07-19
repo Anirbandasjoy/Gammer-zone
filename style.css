@@ -68,7 +68,7 @@ nav ul li i.black {
   height: 700px;
 }
 .bannerText {
-  background-color: #fafafa;
+  background-image: url("./images/Group\ 14.png");
   padding: 3rem;
   border-radius: 0.6rem;
 }
@@ -178,13 +178,16 @@ nav ul li i.black {
   margin-top: 4.5rem;
   margin-bottom: 4.5rem;
 }
+
 .videosTitleText {
   text-align: center;
   margin-bottom: 2rem;
 }
+
 .videosTitleText h1 {
   font-size: 1.5rem;
 }
+
 .videosTitleText h1 span {
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
@@ -193,11 +196,13 @@ nav ul li i.black {
   font-style: normal;
   font-weight: 700;
 }
+
 .videosTitleText p {
   color: #534c64;
   font-size: 1rem;
   margin-top: 0.5rem;
 }
+
 .videos {
   display: flex;
   justify-content: center;
@@ -206,28 +211,78 @@ nav ul li i.black {
   margin: auto;
   gap: 1rem;
 }
+
 .videos p {
   color: #534c64;
   font-size: 1rem;
   margin-top: 0.5rem;
 }
+
 .video {
+  position: relative;
   width: 300px;
 }
+
 .video img {
   width: 100%;
 }
+.video .icon {
+  text-align: center;
+}
+/* Add styles for the overlay */
+.video .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88%;
+  border-radius: 0.6rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Initially hidden */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Style the play button and "Watch Now" text */
+.video .overlay i,
+.video .overlay p {
+  color: white;
+  font-size: 2rem;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Initially hidden */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show the overlay and its content on hover */
+.video:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+
+/* Show the play button and "Watch Now" text on hover */
+.video:hover .overlay i,
+.video:hover .overlay p {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hover styles */
+
+/* Hover effect */
 
 /* install style */
 
 .installContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 500px;
   align-items: center;
   max-width: 1440px;
   margin: auto;
-  gap: 4rem;
 }
 .installText {
   max-width: 280px;
@@ -235,6 +290,11 @@ nav ul li i.black {
 }
 .installText h1 {
   font-size: 1.6rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+.installText p {
+  line-height: 2;
 }
 .installText h1 span {
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
@@ -280,7 +340,7 @@ nav ul li i.black {
   align-items: center;
 }
 .careersTitleText {
-  margin-left: 3.2rem;
+  margin-left: 2rem;
 }
 .careersLists {
   display: flex;
@@ -313,6 +373,7 @@ nav ul li i.black {
 }
 .testomonialContainer {
   margin: 4rem 0;
+  display: none;
 }
 .testomonialContainer .fristImages {
   display: grid;
@@ -337,8 +398,18 @@ nav ul li i.black {
   cursor: pointer;
   transition: 0.4s;
 }
-.secondImagespart {
+.DesToptestomonialContainer .FristImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.DesToptestomonialContainer .SecondImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 .FooterContainer {
   background: #0b0223;
@@ -517,6 +588,9 @@ nav ul li i.black {
   .footerText ul.FooterNav {
     grid-template-columns: auto auto auto;
   }
+  .testomonialContainer {
+    display: block;
+  }
   .footerText ul.AnotherNav {
     grid-template-columns: auto auto;
     text-align: left;
@@ -547,6 +621,12 @@ nav ul li i.black {
   .careersBtn {
     font-size: 0.5rem;
   }
+  .gammerContainer {
+    margin-top: 5rem;
+  }
+  .DesToptestomonialContainer {
+    display: none;
+  }
 }
 
 /* medum device  */
@@ -559,7 +639,7 @@ nav ul li i.black {
   .bannerText {
     padding: 0;
     margin-left: 1rem;
-    background-color: white;
+    background-image: none;
   }
   .bannerContainer img {
     width: 300px;
@@ -587,6 +667,9 @@ nav ul li i.black {
   .footerText ul.FooterNav {
     grid-template-columns: auto auto auto;
   }
+  .testomonialContainer {
+    display: block;
+  }
   .footerText ul.AnotherNav {
     grid-template-columns: auto auto;
     text-align: left;
@@ -611,5 +694,8 @@ nav ul li i.black {
   }
   .socialBtn {
     padding: 0 0.5rem;
+  }
+  .DesToptestomonialContainer {
+    display: none;
   }
 }
